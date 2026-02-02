@@ -92,12 +92,20 @@ const invalidBookingJSON = `   //can't have variables in JSON
 
 1️⃣ What tools or techniques did you use to identify the errors?
 First thing I did was take that code and put it into a json file in VSCode because it will color code the mistakes.
-Some I knew right away but why not sure the tools at hand?
+Some I knew right away but why not use the tools at hand?
+
+Then I formatted the code so it was easier to read
 
 2️⃣ How did you confirm that your corrected JSON file was valid?
 
+Once all the red and underlined items were no longer in the JSON file, I copied the code and pasted it into 
+JSONLint.com
+
 3️⃣ Which errors were the most difficult to spot? Why?
+Trailing commmas because well they're small.
 
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
+
+   Write json in a json file type so VSCode will help me along the way.
 */

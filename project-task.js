@@ -44,30 +44,30 @@ but it contains multiple syntax errors that prevent it from being parsed.
 // 🔍 Provided JSON File with Errors
 // ============================================
 
-const invalidBookingJSON = `
+const invalidBookingJSON = `   //can't have variables in JSON
 {
   "hotelName": "Grand City Hotel",
-  "checkInDate": "2024-05-15"
+  "checkInDate": "2024-05-15"    //missing a comma here.
   "checkOutDate": "2024-05-20",
   "guests": [
     {
-      name: "Alice Johnson",
+      name: "Alice Johnson",   //name key is mission quotes
       "age": 30,
       "email": "alice.johnson@example.com"
-    },
+    }, 
     {
       "name": "Bob Smith",
-      "age": undefined,
+      "age": undefined,           //can't have undefined datatype in JSON switched to null
       "email": "bob.smith@example"
     }
   ],
   "roomDetails": {
     "type": "Suite",
     "pricePerNight": 200,
-    "amenities": ["WiFi", "Breakfast", "Parking",]
+    "amenities": ["WiFi", "Breakfast", "Parking",]   //another trailing comma
   }
 }
-`;
+`;  //can't have trailing comma
 
 
 // ============================================
@@ -91,6 +91,8 @@ const invalidBookingJSON = `
 💬 Reflect and answer the following:
 
 1️⃣ What tools or techniques did you use to identify the errors?
+First thing I did was take that code and put it into a json file in VSCode because it will color code the mistakes.
+Some I knew right away but why not sure the tools at hand?
 
 2️⃣ How did you confirm that your corrected JSON file was valid?
 
